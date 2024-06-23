@@ -1,0 +1,925 @@
+<html>
+<body>
+ <div class = "wholecon">         
+<style>
+    
+   @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; } 
+    }
+
+    .typewriter {
+        overflow: hidden;
+        border-right: .30em solid #FFD700;
+        white-space: nowrap;
+        animation: typing 4s steps(50);
+    }
+    
+    .fixedcontainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: maroon;
+        border-bottom: 10px solid orange;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+     }
+     
+     .con {        
+        top: 0;
+        left: 0;
+        width: 70%;              
+        background-color: brown;        
+        padding: 100px 0;
+        padding-top: 300px;
+        text-align: center;
+        z-index: 1000;
+        border-radius: 40px;
+        box-shadow: 3px 3px 60px black;
+        border-top: 20px solid maroon;
+        border-bottom: 20px solid maroon;        
+        border-right: 20px solid orange;
+        border-left: 20px solid orange;             
+     }
+     
+     .wholecon {         
+        justify-content: center; 
+      			align-items: center; 
+	      		width: 1400px;	      		
+     }
+       
+     .foot {
+        top: 0;
+        left: 0;
+        width: 62%;
+        background-color: brown;        
+        padding: 10px 0;        
+        text-align: center;
+        z-index: 1000;
+        border-radius: 40px;
+        border-top: 20px solid maroon;
+        border-bottom: 20px solid maroon;        
+        border-right: 20px solid orange;
+        border-left: 20px solid orange;
+        font-family: Times New Roman;
+        font-weight: bold;
+        color: orange;
+     }
+     
+     button {
+      background-color: #FF8C00;
+      border: none;
+      color: white;
+      padding: 25px 40px;
+      text-align: center;
+      display: inline-block;
+      font-size: 30px;
+      margin: 10px 6px;
+      cursor: pointer;
+      border-radius: 30px;
+      border: 5px solid white;
+      box-shadow: 2px 2px 20px black;
+      font-family: Times New Roman;
+      font-weight: bold;
+     }
+     
+     h3 {
+       display: inline-block;
+       text-align: center;
+       color: orange;
+       margin-bottom: 80px;
+       width: 40%;
+       font-size: 60px;
+       border-radius: 60px;
+       border: 5px solid white;  
+       font-family: Times New Roman;
+       font-weight: bold;       
+     }
+     .cost {
+         font-size: 30px;
+         width: 300px;
+         margin-bottom: 15px;
+         border-radius: 20px;  
+         border: 5px solid orange; 
+         color: green;   
+         text-align: center; 
+         font-family: Times New Roman;
+         font-weight: bold;   
+         padding: 5px;  
+         transform: scale(1.5);                
+     }  
+     
+     .quanti {
+         font-size: 25px;
+         border-radius: 7px;  
+         border: 5px solid orange; 
+         color: green;   
+         text-align: center; 
+         font-family: Times New Roman;
+         font-weight: bold;   
+         padding: 5px 40px; 
+         transform: scale(1.5); 
+         padding-left: 35px;
+         width: 100px;
+         margin-left: 40px;    
+         margin-top: 40px;        
+     }
+         
+     label {
+         font-size: 40px;  
+         font-family: Times New Roman;
+         font-weight: bold;
+         color: orange;                 
+     }
+     
+     body {
+         background-image: url('cct2.jpg');         
+     }
+     
+     hr {
+         border: 0; 
+         border-top: 10px dashed orange; 
+         height: 0;                                              
+     }
+     
+     .smolhr {          
+         border-top: 4px solid orange;
+         margin-top: -50px;          
+     }
+     
+     input {
+         transform: scale(2);
+         margin-right: 10px;         
+     }
+     
+     .smallcon {
+         display: inline-block;
+         width: 600px; 
+         height: 885px; 
+         padding: 30px;
+         margin-bottom: 230px;
+         border: 5px solid #FF8C00;
+         background-color: maroon;
+         box-shadow: 2px 2px 40px black;         
+         border-radius: 50px;         
+         transition: all 0.3s ease-out;
+     }
+     .smallcon.shrink {
+        transform: scale(0.8) translateY(-50%);
+        opacity: 0.5;
+    }
+     span {
+         display: inline-block;
+         text-align: center;
+         color: #228B22;
+         margin-bottom: 80px;
+         width: 30%;
+         font-size: 40px;         
+         font-family: Times New Roman;
+         font-weight: bold; 
+         border: 8px solid green;
+         border-radius: 10px;         
+     }
+     
+     label {
+         margin-right: 20px;
+     }
+     
+     .sololabel {
+         margin-left: 70px;
+     }
+     
+     .flag {
+         width: 80px;
+         height: 50px;
+         padding-left: 10px; 
+         margin-bottom: -10px;
+     }
+     
+     h4 {
+         font-family: Times New Roman;
+         font-weight: bold;
+         color: orange;
+         font-size: 25px;
+     }
+     
+     .alert { 
+         padding: 20px; 
+         background-color: #f44336; 
+         color: black; 
+         font-size: 18px; 
+         border-radius: 5px; 
+         text-align: center; 
+     }
+     
+     .placeorder {
+         background-color: maroon;  
+         margin-bottom: 40px;                
+     }
+     
+     .style {
+         background-color: #FF8C00;
+         height: 115px;
+         border-top: 5px solid white;
+         border-bottom: 5px solid white;
+         width: 100%;
+     }
+     
+     .but {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 30px;
+            font-family: Verdana;
+            color: white;
+            background-color: orange;
+            border: 5px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 1200px;
+            margin-top: 30px;
+            padding: 15px 40px;
+        }
+        .but:hover {
+            background-color: white;
+            color: orange;
+            font-size: 20px;
+            transform: scale(1.05);
+            border: 2px solid orange;
+        }
+</style>
+
+
+<div class = "fixedcontainer"> 
+    <a href="index.html" class="but" target="_self">Back</a>
+<center> 
+<h1 class = "typewriter"; style = "color: #ffa733; font-family: 'Times New Roman'"> <big><big><big><big><big><big> El Paraíso Urbano</h1></big></big></big></big></big></big>
+
+<h2 style = "color: #FF8C00; font-family: 'Times New Roman'; margin-top: -25px"><big><big><big>Comer fuera de la Caja!</big></big></big></h2>
+
+<div class = "style"> 
+<button class = "placeorder" type="button" onclick="order()">Place Order</button>
+</div>
+<br>
+
+<div> 
+<button onclick="scrollToMainDish()">
+  Main Dish</button>
+
+<button onclick="scrollToVeggie()">
+  Vegetables</button>
+
+<button onclick="scrollToDess()">
+  Desserts</button>
+
+<button onclick="scrollToBev()">
+  Drinks</button>
+
+<button onclick="scrollToAdds()">
+  Add-Ons</button>
+   
+  </div>
+
+<br>
+
+
+<br>
+<br>    
+    
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<center>
+    <div class = "con" id = "MainDish">
+    <big><big><big>
+    <hr>    
+    <h3> 1 </h3>      
+	   <h1 style = "color: #FF8C00; font-family: 'Times New Roman'">Main Dishes (Platos Principales) </big></big></big></li></h1>
+	 <br>
+	<br>  
+	   	 <div class = "smallcon"> 
+	    <label>
+        <input type= "checkbox" value= "Adobo" name = "Adobo" id = "Adobo"> Adobong Baboy | 
+      <img src = "phil.webp" class = "flag">
+    </label>
+         
+    <label> Quantity    
+        <input type= "number" id= "quanti_1" name = "adobo" class = "quanti""> 
+    </label>
+        
+	<img src = "adobo.png" alt = "AdobongBaboy" width = "400" height = "380">
+	<br>
+	<span> P100.00</span>
+	    <hr class = "smolhr">
+	    <h4> It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. There are version wherein onions are also added. Adobo is a popular dish in the Philippines, along with Sinigang. Adobo, in general, can be cooked using different kinds of protein.</h4>
+</div>
+	<br>
+	<br>
+	<br>
+ <br>
+ <br>
+	<br>
+	
+	    <div class = "smallcon"> 
+	    <label>
+        <input type="checkbox" value="Feijoada" name = "Feijoada"> Feijoada | 
+     <img src = "brazil.webp" class = "flag">
+    </label>	    
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    <br>
+	<img src = "feijoada.png" alt = "Feijoada" width = "520" height = "350">
+	<br>
+	<br>
+	<span> P150.00</span>
+	<hr class = "smolhr">
+	<h4> It is a dish that consists of a stew of black beans with various types of pork and beef. It is served with farofa, white rice, sautéed kale, and sliced oranges, among other sides. It is a popular dish, typical of Brazilian cuisine.</h4>
+	</div>
+	<br>
+	<br>
+	<br>
+ <br>
+ <br>
+	<br>
+     <div class = "smallcon"> 
+	    <label>
+        <input type="checkbox"value="Birria Tacos" name = "Birria Tacos"> Birria Tacos |
+    <img src = "mexico.webp" class = "flag">
+    </label>
+	    <br>	
+	    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_3" class = "quanti"> 
+    </label>    
+    	<br>
+    	<br>
+    	<br>
+    
+	<img src = "tacos.png" alt = "BirriaTacos" width = "330" height = "325">
+	<br>
+	<br>
+	<span> P80.00</span>
+	<hr class = "smolhr">
+	<h4> It is traditionally a spicy and super savory Mexican beef or goat stew that’s slow cooked until the meat is tender and fall-apart juicy and delicious. Someone had the amazing idea to stuff this meaty goodness into a taco shell, and then dip the whole thing into the stew and fry it up. </h4>
+	</div>
+	<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+	    <div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Sisig" name = "Sisig"> Sisig | 
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_3" class = "quanti"> 
+    </label>
+    <br>
+	<img src = "sisig.png" alt = "sisig" width = "450" height = "340">
+	<br>
+	<span> P120.00</span>
+	<hr class = "smolhr">
+	<h4>  A Filipino dish made from pork jowl and ears (maskara), pork belly, and chicken liver, which is usually seasoned with calamansi, onions, and chilli peppers. It originates from the Pampanga region in Luzon.</h4>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    	<br>
+    	<div class = "smallcon"> 
+	    <label>
+        <input type="checkbox" value="Kare-kare"> Kare-Kare | 
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_5" class = "quanti"> 
+    </label>
+	<img src = "karekare.png" alt = "karekare" width = "370" height = "360">
+	<br>
+	<br>
+	<span> P140.00</span>
+	<hr class = "smolhr">
+	<h4> It is a traditional Filipino stew complimented with a thick savory peanut sauce. The commonly used meats for this dish are ox tail, tripe, and pork leg. Besides the peanuts, this dish depends on the shrimp paste (on the side).</h4>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	
+</div>
+</center>
+
+
+<br>
+
+
+
+<center>
+    <div class = "con" id = "Veggie">
+      <big><big><big> 
+       <hr>   
+      <h3> 2 </h3>        
+    <h1 style = "color: #32CD32; font-family: 'Times New Roman'">Vegetables (Verduras)</big></big></big></h1></big>
+    <br>
+    <br>
+    <br>
+    <div class = "smallcon"> 
+	    <label>
+        <input type="checkbox"value="Chopseuy"> Chopseuy | 
+    <img src = "china.webp" class = "flag">
+    </label>
+    <br>  
+     <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_" class = "quanti"> 
+    </label>     
+	    <img src = "chopseuy.png" alt = "Chopsuey" width = "350" height = "450">
+	    <br>
+	    <span> P150.00</span>	 
+	    <hr class = "smolhr">  
+	    <h4> It is a stir-fried vegetable dish that is cooked with meats such as chicken and pork. Shrimp and seafood can also be added. This chop suey recipe is special because it has almost every ingredient present. Chicken, pork, shrimp, and boiled quail eggs were all included in the recipe, along with fresh veggies.</h4>
+	    </div>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Ginisang Munggo"> Munggo |
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    	<img src = "munggo.png" alt = "Munggo" width = "330" height = "430">
+    	<br>
+    	<span> P60.00</span>
+    	<hr class = "smolhr">
+    	<h4>It is known to best describe the feeling of home-cooked meals from that particular country. But Ginisang Munggo is perhaps one of the best standout dishes that can definitely bring to you the comfort of a Filipino dishes.</h4>
+    	</div>
+    	<br>
+    	<br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Pinakbet"> Pinakbet | 
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>    
+    <br>
+    <br>
+    	<img src = "pinakbet.png" alt = "Pinakbet" width = "450" height = "300">
+    	<br>
+    	<br>
+    	<span> P110.00</span>
+    	<hr class = "smolhr">
+    	<h4> It is a Filipino vegetable dish. It is composed of a variety of vegetables and it also has a protein component. I made use of lechon kawali or crispy deep-fried pork belly for this recipe. This recipe is a variation of the popular Pinakbet Ilocano.</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<hr>
+</div>
+</center>
+
+
+<br>
+
+
+
+<center>
+    <div class = "con" id = "Dess">
+    <big><big><big> 
+        <hr>
+    <h3> 3 </h3>          
+    <h1 style = "color: #FFD700; font-family: 'Times New Roman'">Desserts (Postres)</big></big></big></h1></big>
+    <br>
+    <br>
+    <br>    
+    <div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Leche Flan"> Leche Flan | 
+    <img src = "spain.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    
+    
+    
+    	<img src = "lecheflan.png" alt = "lecheflan" width = "350" height = "420">
+    	<br>
+    	
+    	<span> P55.00</span>
+    	<hr class = "smolhr">
+    	<h4> It is a dessert made-up of eggs and milk with a soft caramel on top. It resembles crème caramel and caramel custard. It has been a regular item in the  menu of most restaurants because of its taste, ease in preparation and long shelf life.</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Kulfi"> Kulfi | 
+    <img src = "india.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    <br>  
+    <br>
+    <br>
+      
+    	<img src = "kulfi.png" alt = "Kulfi" width = "350" height = "340">
+    	<br>
+    	<br>
+    	<span> P30.00</span>
+    	<hr class = "smolhr">
+    	<h4>Traditionally, kulfi is made by simmering milk overnight in a type of wok called a kadai. The simmering process is complete once the milk develops a rich flavor from the caramelization of the milk proteins.</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Halo-halo"> Halo-Halo |
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    
+    
+    	<img src = "halohalo.png" alt = "Halohalo" width = "400" height = "400">
+    	<br>
+    	<span> P130.00</span>
+    	<hr class = "smolhr">
+    	<h4>It is one of my favorite summertime desserts. From the Philippines—the name means “mix-mix" in Tagalog—the refreshing dish layers shaved ice and condensed milk on top of all sorts of ingredients for an end result that packs in lots of contrasting textures, from chewy to crunchy, creamy to sticky.  </h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<hr>
+</div>
+</center>
+
+
+<br>
+
+
+
+<center>
+    <div class = "con" id = "Bev">
+    <big><big><big>
+        <hr>
+     <h3> 4 </h3>          
+    <h1 style = "color: #6495ED; font-family: 'Times New Roman'"> Drinks (Bebidas)</big></big></big></h1> </big>
+    <br>
+    <br>
+    
+    
+    <div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Vodka"> Vodka |
+    <img src = "russia.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    <br>
+    	<img src = "vodka.png" alt = "Vodka" width = "380" height = "360">
+    	<br>
+    	<span> P570.00</span>
+    	<hr class = "smolhr">
+    	<h4>It is a distilled alcohol that is usually clear and lacking a noticeable aroma or taste. Different styles and varieties of distilled vodka come from Russia, Poland and Sweden, but any liquor made from water and agricultural ethanol can be classified as vodka.</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<div class = "smallcon"> 
+	    <label>
+        <input type="checkbox"value="Tequila"> Tequila |
+    <img src = "mexico.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    <br>
+    <br>
+	    <img src = "cuervo.png" alt = "Tequila" width = "420" height = "390">
+	    <br>
+	    <span> P950.00</span>
+	    <hr class = "smolhr">
+	    <h4>It is a distilled spirit made from the agave plant that can only be produced in certain regions of Mexico. There are several styles of tequila and specific regulations that distillers must follow. Tequila is enjoyed globally and is most often consumed in Mexico and the U.S.</h4>
+	    </div>
+	    <br>
+	    <br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="Redhorse"> Redhorse | 
+    <img src = "phil.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    
+    	<img src = "redhorse.png" alt = "Redhorse" width = "360" height = "430">
+    	<br>
+    	<span> P190.00</span>
+    	<hr class = "smolhr">
+    	<h4> It is an extra strong beer that gives you the true pure alcohol experience. Rebellious and tasty but also bold and intense. It is a sweet and bitterly soft, gives you an energetic experience. Treat yourself with this wonderfully distinctive type of beer.</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<hr>
+</div>
+</center>
+
+
+<br>
+
+
+
+<center>
+    <div class = "con" id = "Add-ons">
+     <big><big><big>
+         <hr>
+     <h3> 5 </h3>      
+    <h1 style = "color: #BA55D3; font-family: 'Times New Roman'">Add-Ons (Complementos)</big></big></big></h1></big>
+    <br>
+    <br>
+    <br>
+    
+    <div class = "smallcon">     
+    	<label>
+        <input type="checkbox"value="Onion Rings"> Onion Rings |
+    <img src = "us.webp" class = "flag">
+    </label>
+    <br>    
+    <label> Quantity
+    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    <br>
+    	<img src = "onion.png" alt = "OnionRing" width = "350" height = "340">
+    	<br>
+    	<br>
+    	
+    	<span> P50.00</span>
+    	<hr class = "smolhr">
+    	<h4> These are a popular appetizer at many restaurants, and with this recipe, you can satisfy your craving at home. This is an actual recipe from a former employee of a popular drive-in restaurant. Sweet and tender on the inside, crispy and crunchy on the outside — just like the pros make!</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<div class = "smallcon"> 
+    	<label>
+        <input type="checkbox"value="French Fries"> French Fries |
+    <img src = "belgium.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity   
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>
+    
+    	<img src = "frenchfries.png" alt = "FrenchFries" width = "320" height = "405">
+    	<br>
+    	<br>
+    	<span> P30.00</span>
+    	<hr class = "smolhr">
+    	<h4> It is a side dish or snack typically made from deep-fried potatoes that have been cut into various shapes, especially thin strips. Fries are often salted and served with other items, including ketchup, mayonnaise, or vinegar.</h4>
+    	</div>
+    	<br>
+    	<br> 
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	
+    	 <div class = "smallcon">   	
+    	<label>
+        <input type="checkbox"value="Buchi"> Buchi |
+    <img src = "china.webp" class = "flag">
+    </label>
+    <br>
+    <label> Quantity    
+        <input = "quantity" type= "number" id= "quanti_1" class = "quanti"> 
+    </label>
+    <br>    
+    <br>
+    	<img src = "buchi.png" alt = "Buchi" width = "480" height = "370">
+    	<br>
+    	<br>
+    	<span> P30.00</span>
+    	<hr class = "smolhr">
+    	<h4>Buchi, also known as sesame balls, are golden, chewy, and extra delicious with sweetened red bean filling. Delicious as a snack or dessert!</h4>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<hr>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<script>
+    function scrollToMainDish() {
+  var element = document.getElementById("MainDish");
+  element.scrollIntoView({ behavior: 'smooth',block:'start' });
+}
+
+    function scrollToVeggie() {
+  var element = document.getElementById("Veggie");
+  element.scrollIntoView({ behavior: 'smooth',block:'start' });
+}
+
+    function scrollToDess() {
+  var element = document.getElementById("Dess");
+  element.scrollIntoView({ behavior: 'smooth',block:'start' });
+}
+
+    function scrollToBev() {
+  var element = document.getElementById("Bev");
+  element.scrollIntoView({ behavior: 'smooth',block:'start' });
+}
+
+    function scrollToAdds() {
+  var element = document.getElementById("Add-ons");
+  element.scrollIntoView({ behavior: 'smooth',block:'start' });
+}
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+                
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change',getPrice);
+    });
+    
+     
+     function order() {
+      
+         var orderSummary = "Ordered dishes:\n"; 
+         var quantity = 0;
+         var totalPrice = 0; 
+         var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+        checkboxes.forEach(function(checkbox) { 
+                 
+        orderSummary += checkbox.value + " | ₱" + getPrice(checkbox.value) + "\n";
+         totalPrice += getPrice(checkbox.value); 
+         }); 
+                  
+         orderSummary += "\n\t\t\t\t\t\t\t\t\tTotal Price: ₱" + totalPrice.toFixed(2);
+         
+         orderSummary += "\n\t\t\t\t\t\t\t Thank you for Ordering!"                        
+         alert(orderSummary);
+                           
+} 
+
+     function getPrice(dish) { 
+         switch(dish) { 
+             case "Adobo": 
+             return 100 ; 
+             case "Feijoada": 
+             return 150; 
+             case "Birria Tacos": 
+             return 80; 
+             case "Sisig": 
+             return 120; 
+             case "Kare-kare": 
+             return 140;
+             case "Chopseuy": 
+             return 150; 
+             case "Ginisang Munggo": 
+             return 60;
+             case "Pinakbet": 
+             return 110; 
+             case "Leche Flan": 
+             return 55;
+             case "Kulfi": 
+             return 30; 
+             case "Halo-halo": 
+             return 130;
+             case "Vodka": 
+             return 570; 
+             case "Tequila": 
+             return 950;             
+             case "Redhorse": 
+             return 190;            
+             case "Onion Rings": 
+             return 50;
+             case "French Fries": 
+             return 30;            
+             case "Buchi": 
+             return 30;
+             default: 
+             return 0; 
+             } 
+             }  
+             
+             
+            window.addEventListener('scroll', function() {
+        var containerElements = document.querySelectorAll('.smallcon');
+        var windowHeight = window.innerHeight;
+
+        containerElements.forEach(function(container) {
+            var containerPosition = container.getBoundingClientRect().top;
+            var containerBottom = container.getBoundingClientRect().bottom;
+
+            if (containerPosition < 0 || containerBottom > windowHeight) {
+                container.classList.add('shrink');
+            } else {
+                container.classList.remove('shrink');
+            }
+        });
+    });                       
+</script>  
+
+      
+    </center>
+    </div>
+   </body>
+</html>

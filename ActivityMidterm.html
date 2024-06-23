@@ -1,0 +1,516 @@
+<html>
+<head>
+    
+    <style>
+        .quantity-controls button {
+            cursor: pointer;
+        }
+        
+     .wholecon {  
+         top: 0;
+         left: 0;              
+         width: 1000px;
+         height: 10000px;
+         border: 10px solid #2DDC9A;                        
+     }
+     
+    .urban {
+        font-size: 65px;
+        color: #2DDC9A;  
+        text-align: center;     
+        font-family: Courier New;
+        font-weight: bold;
+        margin-top: 1px;
+    }
+    
+    .tagline {
+        font-size: 40px;
+        color: #2DDC9A;   
+        text-align: center;
+        margin-top: -60px;
+        font-family: Courier New;
+        font-weight: bold;
+    }
+    
+    .fixedcontainer {              
+        position: fixed;
+        top: 0;
+        background-color: #0F2610;
+        width: 1300px;       
+        border-bottom: 10px solid #2DDC9A;              
+        padding: 10px 0;
+        text-align: center;
+        align-item: center;        
+        box-shadow: 2px 2px 20px black;             
+     }
+     
+     .con {                   
+        right: 0;        
+        width: 1000px; 
+        height: 11800px;             
+        background-color: #0F2610;        
+        padding: 150px;
+        padding-top: 300px;     
+        text-align: left;     
+                          
+     }
+     
+     h2 {
+        font-size: 55px;
+        color: #D9B07E;   
+        text-align: center;        
+        font-family: Courier New;
+        font-weight: bold;
+        margin-bottom: -5px;
+        padding-left: 30px;
+        padding-top: 50px;
+     }
+     
+     .smallcon {                
+        width: 480px; 
+        height: 400px;         
+        margin-bottom: 20px;          
+        background-color: #2C3C44;        
+        padding: 50px;                     
+        border: 10px solid #2DDC9A;
+        border-radius: 40px;                
+        box-shadow: 2px 2px 100px black;  
+        transition: all 0.3s ease-out;           
+     }
+      .smallcon.shrink {
+        transform: scale(0.8) translateY(-50%);
+        opacity: 0.5;
+    }         
+     .button_top {
+      background-color: #0F2610;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;            
+      font-size: 30px;      
+      margin-top: 20px;           
+      border-radius: 20px;
+      border: 5px solid #2DDC9A;
+      box-shadow: 2px 2px 20px black;
+      font-family: Courier New;
+      font-weight: bold;  
+      transition: background-color 0.3s;
+     }         
+     
+     button {
+      background-color: #0F2610;
+      color: white;
+      padding: 20px 20px;
+      text-align: center;            
+      font-size: 25px;
+      margin: 10px; 
+      margin-left: px;             
+      border-radius: 20px;
+      border: 5px solid #2DDC9A;
+      box-shadow: 2px 2px 20px black;
+      font-family: Courier New;
+      font-weight: bold;  
+      transition: background-color 0.3s;      
+     } 
+     
+     button:hover {
+       background-color: #2DDC9A;
+     }     
+     
+     .button_top:hover {
+       background-color: #2DDC9A;
+     }     
+                
+    input {
+      width: 150px;
+      background-color: #0F2610;
+      color: white;
+      padding: 10px 10px;      
+      text-align: center;            
+      font-size: 30px;
+      margin: 10px;             
+      border-radius: 20px;
+      border: 5px solid #2DDC9A;
+      box-shadow: 2px 2px 20px black;
+      font-family: Courier New;
+      font-weight: bold;        
+     }  
+     
+     input {
+      width: 150px;
+      background-color: #0F2610;
+      color: white;
+      padding: 10px 10px;      
+      text-align: center;            
+      font-size: 30px;
+      margin: 10px;             
+      border-radius: 20px;
+      border: 5px solid #2DDC9A;
+      box-shadow: 2px 2px 20px black;
+      font-family: Courier New;
+      font-weight: bold;        
+     }        
+     
+     li {   
+      height: 350px;   
+      background-color: #0F2610;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;            
+      font-size: 30px;
+      margin: 10px;             
+      border-radius: 20px;
+      border: 5px solid #2DDC9A;
+      box-shadow: 2px 2px 20px #2DDC9A;
+      font-family: Courier New;
+      font-weight: bold;  
+     }       
+     
+    .transac {        
+        position: fixed;             
+        max-height: 400px; 
+        overflow-y: auto;
+        width: 700px; 
+        height: 250px;         
+        margin-bottom: 50px; 
+        margin-top: 1300px;         
+        background-color: #2C3C44;        
+        padding-top: 40px;                            
+        border: 5px solid #2DDC9A;
+        border-radius: 40px;                
+        box-shadow: 5px 5px 120px black;        
+    }
+    
+    h3 {
+        margin-bottom: -10px;
+        font-family: Courier New;
+        color: #2DDC9A;
+        font-size: 25px;
+    }
+    .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 30px;
+            font-family: Verdana;
+            color: #2DDC9A;
+            background-color: #2C3C44;
+            border: 5px solid #2DDC9A;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 1000px;
+            padding: 15px 40px;
+        }
+        .button:hover {
+            background-color: white;
+            color: #2DDC9A;
+            font-size: 40px;
+            transform: scale(1.05);
+            border: 4px solid #2DDC9A;
+        }
+         
+    </style>
+    
+</head>
+
+<body>
+    <div class = "wholecon"> 
+    <div class = "fixedcontainer"> 
+    <a href="index.html" class="button" target="_self" class = "button">Back</a>    
+    <h1 class = "urban">Urban Finds</h1>
+    <h3 class = "tagline">All Eyes on Us.</h2>
+       
+    <div class="nav-container">
+    <button onclick="scrollToCategory('jeans')" class = "button_top">Jeans</button>
+    <button onclick="scrollToCategory('tshirts')"class = "button_top">T-Shirts</button>
+    <button onclick="scrollToCategory('perfumes')"class = "button_top">Perfumes</button>
+    <button onclick="scrollToCategory('sandals')"class = "button_top">Sandals</button>
+    <button onclick="scrollToCategory('toys')"class = "button_top">Toys</button>
+</div>
+
+
+ </div>
+    
+    <br>
+        
+    <div class = "con">
+        
+        <center> <div class = "transac">  
+        <input type="radio" id="studentDiscount" name="discount"> Student(15% discount)<br>
+        <input type="radio" id="seniorDiscount" name="discount">Senior (20% discount)<br>
+        <input type="radio" id="disabilityDiscount" name="discount">  Person with Disability (30% discount)
+    
+    
+        <h3>Payment: ₱</h3><input type="text" id="paymentAmount">
+    
+    <button onclick="checkout()">Checkout</button>    
+</div></center>
+        
+     <img src = "logos.png">
+    <h2 id = "jeans">| Jean Section |</h2>
+    <form>
+        <ul>
+            <center><div class = "smallcon"> 
+           <img src = "navy.jpg">                         
+            <li><input type="checkbox" id="jeans1" name="jeans1" value="Blue Denim Jeans"> <br> Navy Denim Jeans <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_jeans1')">-</button> <input type="number" id="quantity_jeans1" name="quantity_jeans1" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_jeans1')">+</button></span> Price: ₱500.00</li>
+            </div>
+                                   
+            <div class = "smallcon">
+            <img src = "skinny.jpg">       
+            <li><input type="checkbox" id="jeans2" name="jeans2" value="Skinny Fit Jeans"><br> Skinny Fit Jeans <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_jeans2')">-</button> <input type="number" id="quantity_jeans2" name="quantity_jeans2" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_jeans2')">+</button></span> Price: ₱600.00</li>
+            </div>
+            
+            <div class = "smallcon">
+            <img src = "middle.jpg">       
+            <li><input type="checkbox" id="jeans3" name="jeans3" value="High-Waisted Jeans"><br> Mid-Waisted Jeans <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_jeans3')">-</button> <input type="number" id="quantity_jeans3" name="quantity_jeans3" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_jeans3')">+</button></span> Price: ₱550.00</li>
+            </div>
+            
+            <div class = "smallcon">
+            <img src = "ripped.jpg">       
+            <li><input type="checkbox" id="jeans4" name="jeans4" value="Ripped Jeans"><br> Ripped Jeans <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_jeans4')">-</button> <input type="number" id="quantity_jeans4" name="quantity_jeans4" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_jeans4')">+</button></span> Price: ₱650.00</li>
+            </div></center>
+        </ul>
+    </form>
+
+    <h2 id = "tshirts">| T-Shirt Section |</h2>
+    <form>
+        <ul>
+            <center><div class = "smallcon">
+            <img src = "grasya.jpeg">   
+            <li><input type="checkbox" id="tshirt1" name="tshirt1" value="Plain White T-Shirt"><br> Grasya Worldwide T-Shirt <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_tshirt1')">-</button> <input type="number" id="quantity_tshirt1" name="quantity_tshirt1" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_tshirt1')">+</button></span> Price: ₱200.00</li>
+            
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "supreme.jpg">       
+            <li><input type="checkbox" id="tshirt2" name="tshirt2" value="Graphic Print T-Shirt"><br> Supreme T-Shirt <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_tshirt2')">-</button> <input type="number" id="quantity_tshirt2" name="quantity_tshirt2" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_tshirt2')">+</button></span> Price: ₱250.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "round.jpg">       
+            <li><input type="checkbox" id="tshirt3" name="tshirt3" value="V-Neck T-Shirt"><br> Round-Neck T-Shirt <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_tshirt3')">-</button> <input type="number" id="quantity_tshirt3" name="quantity_tshirt3" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_tshirt3')">+</button></span> Price: ₱220.00</li>
+            </div>
+            
+            <div class = "smallcon">
+           <img src = "sleeve.jpg">         
+            <li><input type="checkbox" id="tshirt4" name="tshirt4" value="Long-Sleeve T-Shirt"><br> Long-Sleeve T-Shirt <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_tshirt4')">-</button> <input type="number" id="quantity_tshirt4" name="quantity_tshirt4" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_tshirt4')">+</button></span> Price: ₱300.00</li>
+            </div></center>
+        </ul>
+    </form>
+
+    <h2 id = "perfumes">| Perfume Section |</h2>
+    <form>
+        <ul>
+            <center><div class = "smallcon">
+            <img src = "laurent.jpg">        
+            <li><input type="checkbox" id="perfume1" name="perfume1" value="Floral Perfume"><br> Saint Laurent Libre eau de parfum <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_perfume1')">-</button> <input type="number" id="quantity_perfume1" name="quantity_perfume1" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_perfume1')">+</button></span> Price: ₱4000.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "chanel.jpg">       
+            <li><input type="checkbox" id="perfume2" name="perfume2" value="Citrus Perfume"><br> Chanelcoco Mademoiselle Eau de Parfum.
+
+ <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_perfume2')">-</button> <input type="number" id="quantity_perfume2" name="quantity_perfume2" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_perfume2')">+</button></span> Price: ₱3500.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "byredo.jpg">       
+            <li><input type="checkbox" id="perfume3" name="perfume3" value="Musk Perfume"><br> Byredo Blanche Eau de Parfum <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_perfume3')">-</button> <input type="number" id="quantity_perfume3" name="quantity_perfume3" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_perfume3')">+</button></span> Price: ₱4500.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "tom.jpeg">       
+            <li><input type="checkbox" id="perfume4" name="perfume4" value="Woody Perfume"><br> Tom Ford Oud Wood <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_perfume4')">-</button> <input type="number" id="quantity_perfume4" name="quantity_perfume4" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_perfume4')">+</button></span> Price: ₱5000.00</li>
+            </div></center>
+        </ul>
+    </form>
+
+    <h2 id = "sandals">| Sandal Section |</h2>
+    <form>
+        <ul>
+            <center><div class = "smallcon">
+           <img src = "flippy.jpg">         
+            <li><input type="checkbox" id="sandals1" name="sandals1" value="Flip Flops"><br> Flip Flops <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_sandals1')">-</button> <input type="number" id="quantity_sandals1" name="quantity_sandals1" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_sandals1')">+</button></span> Price: ₱1500.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+           <img src = "strap.jpeg">        
+            <li><input type="checkbox" id="sandals2" name="sandals2" value="Slide Sandals"><br> Slide Sandals <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_sandals2')">-</button> <input type="number" id="quantity_sandals2" name="quantity_sandals2" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_sandals2')">+</button></span> Price: ₱2000.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "platform.jpg">       
+            <li><input type="checkbox" id="sandals3" name="sandals3" value="Platform Sandals"><br> Platform Sandals <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_sandals3')">-</button> <input type="number" id="quantity_sandals3" name="quantity_sandals3" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_sandals3')">+</button></span> Price: ₱2500.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "slide.jpg">       
+            <li><input type="checkbox" id="sandals4" name="sandals4" value="Strappy Sandals"><br> Strappy Sandals <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_sandals4')">-</button> <input type="number" id="quantity_sandals4" name="quantity_sandals4" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_sandals4')">+</button></span> Price: ₱3000.00</li>
+            </div></center>
+        </ul>
+    </form>
+
+    <h2 id = "toys">| Toy Section |</h2>
+    <form>
+        <ul>
+            <center><div class = "smallcon">
+           <img src = "voltes.jpg">         
+            <li><input type="checkbox" id="toy1" name="toy1" value="Action Figures"> <br>Voltes V <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_toy1')">-</button> <input type="number" id="quantity_toy1" name="quantity_toy1" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_toy1')">+</button></span> Price: ₱1000.00</li>
+            </div>
+            
+            <div class = "smallcon"> 
+            <img src = "barb.jpg">       
+            <li><input type="checkbox" id="toy2" name="toy2" value="Dolls"><br> Barbie <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_toy2')">-</button> <input type="number" id="quantity_toy2" name="quantity_toy2" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_toy2')">+</button></span> Price: ₱1500.00</li>
+            </div>
+            
+            <div class = "smallcon">
+            <img src = "lego.jpeg">        
+            <li><input type="checkbox" id="toy3" name="toy3" value="Building Blocks"><br> LEGO Building Blocks <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_toy3')">-</button> <input type="number" id="quantity_toy3" name="quantity_toy3" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_toy3')">+</button></span> Price: ₱200.00</li>
+            </div>
+            
+            <div class = "smallcon">
+            <img src = "axial.jpg">        
+            <li><input type="checkbox" id="toy4" name="toy4" value="Remote-Controlled Cars"><br> Axial Remote Control Cars <br> Quantity:<br> <span class="quantity-controls"><button type="button" onclick="decreaseQuantity('quantity_toy4')">-</button> <input type="number" id="quantity_toy4" name="quantity_toy4" min="0" value="0" readonly> <button type="button" onclick="increaseQuantity('quantity_toy4')">+</button></span> Price: ₱250.00</li>
+            </div></center>
+        </ul>
+    </form>
+
+    </div>
+    
+    <script>
+        
+        function toggleButtons() {
+        var navContainer = document.querySelector('.nav-container');
+        navContainer.classList.toggle('show');
+    }
+
+    function scrollToCategory(category) {
+        var element = document.getElementById(category);
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+        
+        function increaseQuantity(inputId) {
+            var inputElement = document.getElementById(inputId);
+            var currentValue = parseInt(inputElement.value);
+            inputElement.value = currentValue + 1;
+        }
+
+        function decreaseQuantity(inputId) {
+            var inputElement = document.getElementById(inputId);
+            var currentValue = parseInt(inputElement.value);
+            if (currentValue > 0) {
+                inputElement.value = currentValue - 1;
+            }
+        }
+
+        function checkout() {
+        var checkedItems = {};
+        var totalCost = 0;
+        var discountsApplied = [];
+        var categories = ["Jeans", "T-Shirts", "Perfumes", "Sandals", "Toys"];
+        categories.forEach(function(category) {
+            checkedItems[category] = [];
+            var items = document.querySelectorAll('input[name^="' + category.toLowerCase() + '"]');
+            items.forEach(function(item) {
+                var quantity = parseInt(document.getElementById('quantity_' + item.id).value);
+                var price = parseFloat(item.parentElement.textContent.match(/\d+\.\d{2}/)[0]);
+                var itemCost = quantity * price;
+                if (item.checked) {
+                    checkedItems[category].push({
+                        item: item.value,
+                        quantity: quantity,
+                        price: price.toFixed(2),
+                        itemCost: itemCost.toFixed(2)
+                    });
+                    totalCost += itemCost;
+                }
+            });
+            checkedItems[category].sort((a, b) => a.quantity - b.quantity);
+        });
+
+        // Get missed items for checkout
+        var missedItems = "";
+        for (var category in checkedItems) {
+            if (checkedItems.hasOwnProperty(category) && checkedItems[category].length === 0) {
+                missedItems += category + ", ";
+            }
+        }
+
+        if (missedItems !== "") {
+            missedItems = "Missed items: " + missedItems.slice(0, -2) + "\n";
+        }
+
+        // Apply discounts
+        var selectedDiscount = document.querySelector('input[name="discount"]:checked');
+        if (selectedDiscount) {
+            var discountPercentage = 0;
+            var discountType = "";
+            if (selectedDiscount.id === "studentDiscount") {
+                discountPercentage = 0.10;
+                discountType = "Student (15% discount)";
+            } else if (selectedDiscount.id === "seniorDiscount") {
+                discountPercentage = 0.20;
+                discountType = "Senior (20% discount)";
+            } else if (selectedDiscount.id === "disabilityDiscount") {
+                discountPercentage = 0.30;
+                discountType = "Person with Disability (30% discount)";
+            }
+            var discountAmount = totalCost * discountPercentage;
+            totalCost -= discountAmount;
+            discountsApplied.push(discountType + ": -₱" + discountAmount.toFixed(2));
+        }
+
+        // Get payment amount
+        var paymentAmount = parseFloat(document.getElementById('paymentAmount').value);
+
+        var checkoutMessage = missedItems;
+        for (var category in checkedItems) {
+            if (checkedItems.hasOwnProperty(category) && checkedItems[category].length > 0) {
+                checkoutMessage += "Category: " + category + "\n";
+                var index = 1;
+                checkedItems[category].forEach(function(checkedItem) {
+                    checkoutMessage += index + ". Item)): " + checkedItem.item + ", Quantity: " + checkedItem.quantity + ", Price: ₱" + checkedItem.price + ", Item Cost: ₱" + checkedItem.itemCost + "\n";
+                    index++;
+                });
+            }
+        }
+        if (discountsApplied.length > 0) {
+            checkoutMessage += "Discounts Applied:\n";
+            discountsApplied.forEach(function(discount) {
+                checkoutMessage += discount + "\n";
+            });
+        }
+        checkoutMessage += "Total Cost (after discounts): ₱" + totalCost.toFixed(2) + "\n";
+        
+        // Handle payment
+        if (paymentAmount >= totalCost) {
+            var change = paymentAmount - totalCost;
+            checkoutMessage += "Payment: ₱" + paymentAmount.toFixed(2) + "\n";
+            checkoutMessage += "Change: ₱" + change.toFixed(2);
+        } else {
+            checkoutMessage = "Insufficient payment. Please provide sufficient payment.";
+        }
+
+        alert("Checked Items:\n" + checkoutMessage);
+    }
+    
+    window.addEventListener('scroll', function() {
+        var containerElements = document.querySelectorAll('.smallcon');
+        var windowHeight = window.innerHeight;
+
+        containerElements.forEach(function(container) {
+            var containerPosition = container.getBoundingClientRect().top;
+            var containerBottom = container.getBoundingClientRect().bottom;
+
+            if (containerPosition < 0 || containerBottom > windowHeight) {
+                container.classList.add('shrink');
+            } else {
+                container.classList.remove('shrink');
+            }
+        });
+    });
+    </script>
+    </div>
+</body>
+</html>

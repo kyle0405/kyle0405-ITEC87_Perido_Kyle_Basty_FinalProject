@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head> 
+    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+        body {
+            font-family: Verdana;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;            
+            background-color: gold;
+            margin: 0;
+            background-image: url('cct2.jpg'); 
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            align-item: center;
+            width: 1300px;
+            height: 2000px;            
+            border: 15px solid maroon;  
+            background-color: white; 
+            transition: opacity 1s ease-in-out;       
+            box-shadow: 3px 3px 40px black;  
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 70px;
+            font-family: Courier New;
+            color: maroon;   
+            align-item: center;         
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: Courier New;
+            color: maroon;  
+            width: 1200px; 
+            margin: 0 auto; 
+            text-align: center;
+            padding: 20px;
+        }
+        .welcome {
+            margin-bottom: 30px;
+            font-size: 43px;
+            font-family: Courier New;
+            color: white;  
+            width: 1200px; 
+            margin: 0 auto; 
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .conwelcome {
+            width: 1300px;
+            height: 100px;
+            background-color: maroon;
+            align-item: center;
+        }
+        
+        .h31 {
+            font-size: 20px;
+            font-family: Verdana;
+            color: gold;  
+            padding: 22px;
+        }
+        .h31:hover {
+            font-size: 20px;
+            font-family: Verdana;
+            color: maroon;  
+            padding: 22px;
+        }
+        .h32 {
+            font-size: 20px;
+            font-family: Verdana;
+            color: #4da3ff;  
+            padding: 22px;
+        }
+        .h32:hover {
+            font-size: 20px;
+            font-family: Verdana;
+            color: #0056b3;  
+            padding: 22px;
+        }
+        .h33 {
+            font-size: 20px;
+            font-family: Verdana;
+            color: orange;  
+            padding: 22px;
+        }
+        .h33:hover {
+            font-size: 20px;
+            font-family: Verdana;
+            color: brown;  
+            padding: 22px;
+        }
+        .h34 {
+            font-size: 20px;
+            font-family: Verdana;
+            color: #2DDC9A;  
+            padding: 22px;
+        }
+        .h34:hover {
+            font-size: 20px;
+            font-family: Verdana;
+            color: #0F2610;  
+            padding: 22px;
+        }  
+        
+        .button1 {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 30px;
+            margin-top: 18px;
+            font-size: 20px;
+            color: white;
+            background-color: maroon;
+            border: 4px solid gold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+        .button1:hover {
+            background-color: white;
+            color: gold;
+            font-size: 23px;
+            transform: scale(1.02);
+            border: 4px solid maroon;
+        }
+        .button2 {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 30px;
+            margin-top: 18px;
+            font-size: 20px;
+            color: white;
+            background-color: #007bff;
+            border: 4px solid #0300b3;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+        .button2:hover {
+            background-color: white;
+            color: #0056b3;
+            font-size: 23px;
+            transform: scale(1.02);
+            border: 4px solid #007bff;
+        }
+        .button3 {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 30px;
+            margin-top: 18px;
+            font-size: 20px;
+            color: white;
+            background-color: brown;
+            border: 4px solid orange;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+        .button3:hover {
+            background-color: white;
+            color: orange;
+            font-size: 23px;
+            transform: scale(1.02);
+            border: 4px solid brown;
+        }
+        .button4 {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 30px;
+            margin-top: 18px;
+            font-size: 20px;
+            color: white;
+            background-color: #0F2610; 
+            border: 4px solid #1ba26f;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+        .button4:hover {
+            background-color: white;
+            color: #2DDC9A;
+            font-size: 23px;
+            transform: scale(1.02);
+            border: 4px solid #0F2610;
+        }
+        
+        .minicon1 {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 7px solid gold;
+            background-color: maroon; 
+            display: inline-block;                   
+            margin: 15px; 
+            cursor: pointer;           
+            border-radius: 10px;     
+            border-top-left-radius: 50px; 
+            border-top-right-radius: 50px;            
+            box-shadow: 3px 3px 40px black;
+            position: relative;
+            transition: transform 0.3s ease, background-color 0.3s ease;      
+        }
+        .minicon1:hover {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 9px solid maroon;
+            background-color: gold;                       
+            display: inline-block;                   
+            margin: 15px;            
+            border-radius: 50px;
+            box-shadow: 2px 2px 20px gold;
+            position: relative;  
+            transform: scale(1.05);    
+        }
+        
+        
+        .minicon2 {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 7px solid #4da3ff;
+            background-color: #0056b3; 
+            display: inline-block;                   
+            margin: 15px;            
+            border-radius: 10px;
+            border-top-left-radius: 50px; 
+            border-top-right-radius: 50px;  
+            box-shadow: 3px 3px 40px black;
+            position: relative;   
+            transition: transform 0.3s ease, background-color 0.3s ease;    
+        }
+        .minicon2:hover {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 9px solid #0056b3; 
+            background-color: #4da3ff; 
+            display: inline-block;                   
+            margin: 15px;            
+            border-radius: 50px;
+            box-shadow: 2px 2px 20px #4da3ff;
+            position: relative;  
+            transform: scale(1.05);    
+        }
+        
+        .minicon3 {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 7px solid orange;
+            background-color: brown; 
+            display: inline-block;                   
+            padding-top: 50px;
+            margin: 15px;                    
+            border-radius: 10px;
+            border-top-left-radius: 50px; 
+            border-top-right-radius: 50px;  
+            box-shadow: 3px 3px 40px black;
+            position: relative;
+            transition: transform 0.3s ease, background-color 0.3s ease;       
+        }
+        .minicon3:hover {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px; 
+            background-color: orange;           
+            border: 9px solid brown;
+            display: inline-block;                   
+            margin: 15px;            
+            border-radius: 50px;
+            box-shadow: 2px 2px 20px maroon;
+            position: relative;  
+            transform: scale(1.05);    
+        }
+        
+        .minicon4 {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px;
+            border: 7px solid #2DDC9A;
+            background-color: #0F2610;
+            display: inline-block;                   
+            padding-top: 50px;
+            margin: 15px;                    
+            border-radius: 10px;
+            border-top-left-radius: 50px; 
+            border-top-right-radius: 50px;  
+            box-shadow: 3px 3px 40px black;
+            position: relative; 
+            transition: transform 0.3s ease, background-color 0.3s ease;      
+        }
+        .minicon4:hover {
+            width: 500px;
+            height: 550px;
+            padding-top: 50px; 
+            background-color: #2DDC9A;          
+            border: 9px solid #0F2610;
+            display: inline-block;                   
+            margin: 15px;            
+            border-radius: 50px;
+            box-shadow: 2px 2px 20px maroon;
+            position: relative;  
+            transform: scale(1.05);    
+        }
+        hr {
+            width: 460px;
+            border: 1.5px solid white;            
+        }               
+        
+        .title {
+            width: 700px;
+            background: linear-gradient(to right, maroon, white);
+        }
+        
+        .profile-pic1 {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid gold;
+            margin-top: -75px;            
+        }
+        .profile-pic1:hover {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid maroon;
+            margin-top: -75px;            
+        }
+        .profile-pic2 {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #0300b3; 
+            margin-top: -75px;            
+        }
+        .profile-pic2:hover {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #0056b3;
+            margin-top: -75px;            
+        }
+        .profile-pic3 {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid orange;
+            margin-top: -75px;            
+        }
+        .profile-pic3:hover {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid brown;
+            margin-top: -75px;            
+        }
+        .profile-pic4 {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #1ba26f;
+            margin-top: -75px;            
+        }
+        .profile-pic4:hover {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #0F2610;
+            margin-top: -75px;            
+        }
+        
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #00e6e6;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 5.5s steps(30, end), blink-caret 0.6s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: gold; }
+        }
+        .button {
+            
+            position: fixed;           
+            padding: 15px 25px;
+            font-size: 30px;
+            font-family: Verdana;
+            color: white;
+            background-color: maroon;
+            border: 5px solid gold;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-left: -620px;
+            margin-top: 655px;
+            padding: 15px 40px;
+        }
+        .button:hover {
+            background-color: white;
+            color: gold;
+            font-size: 40px;
+            transform: scale(1.05);
+            border: 4px solid maroon;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class = "head"> 
+        
+        <h1 class = "bounce"><i style = "color: #007bff">Navigating</i> <i style = "color: gold; ">the</i> <i style = "color: red">Web</i>: A Journey Through HTML and CSS Button-Powered Activities</h1>
+        <hr>
+        <div class = "conwelcome"> 
+        <h2 class = "typewriter welcome">Welcome to my <b style = "color: gold">Final Project!</b></h2>
+        </div>
+       <h2>This project demonstrates the creation of a main page that features a clean and user-friendly interface with buttons directing users to four different activity pages. Each button on the main page represents a unique activity, designed to amazed your creativity.</h2>
+        </div>
+        
+        
+        <div class = "minicon1"> 
+        <img src="cor.jpg" alt="cor" class="profile-pic1 img-fluid mx-auto d-block">
+         
+        <a href="Cor.html" class="button1" target="_self">Certificate of Registration</a>
+        <hr>
+        <h3 class = "h31">A Certificate of Registration for a school typically refers to a document that confirms the enrollment or registration of a student in a particular educational institution or program. It serves as an official record of the student's affiliation with the school for a specific academic period or course of study.</h3>
+        </div>
+        
+        
+        <div class="minicon2">
+        <img src="resume.jpg" alt="resume" class="profile-pic2 img-fluid mx-auto d-block">            
+        <a href="Resume.html" class="button2" target="_self">Resume/ Curriculum Vitae</a>
+        <hr>
+        <h3 class = "h32">A Resume or Curriculum Vitae (CV) is a document that summarizes a person's education, work experience, skills, achievements, and other qualifications for employment or academic opportunities. It serves as a marketing tool for individuals seeking job positions, internships, scholarships, or academic programs.</h3>
+        </div>
+        
+                
+        <div class="minicon3">
+        <img src="resto.jpg" alt="Profile Picture" class="profile-pic3 img-fluid mx-auto d-block"> 
+        <br>       
+        <a href="Perido_Practical.html" class="button3" target="_self">Restaurant Menu</a>
+        <hr>
+        <h3 class = "h33">A Restaurant Menu typically refers to a list of Filipino and other nationalities' food and beverage items available for purchase at a restaurant. It serves as a primary communication tool between the restaurant and its customers from different countries, detailing the variety of main dishes, vegetables, desserts, drinks, and add-ons offered by the establishment. </h3>
+        </div>
+        
+        <div class="minicon4">
+        <img src="sari.jpg" alt="Profile Picture" class="profile-pic4 img-fluid mx-auto d-block"> 
+        <br>       
+        <a href="ActivityMidterm.html" class="button4" target="_self">Sari-Sari Store</a>
+        <hr>
+        <h3 class = "h34">The term Sari-sari Store embodies the concept of diversity and inclusivity, reflecting the store's purpose of providing a variety of items to meet the diverse needs and preferences of customers. These items can include Jeans, T-shirts, Perfumes, Sandos, Toys, sometimes even cooked food or freshly prepared meals, and other things that are essential and beneficial to customers.</h3>
+        </div>
+                
+  <a href="signin.html" class="button" target="_self" class = "button">Back</a>      
+    </div>
+        
+</body>
+</html>
